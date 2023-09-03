@@ -25,6 +25,7 @@ setSecondsTimeout(function () {
 
 function setSecondsTimeout(cb, delayInSeconds) {
   // Your code here
+  return setTimeout(cb, delayInSeconds * 1000);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -33,3 +34,5 @@ try {
 } catch {
   module.exports = null;
 }
+
+// setTimeout(cb, time in ms); 1000ms => 1s
